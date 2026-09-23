@@ -1,0 +1,8 @@
+TestAutomationFramework\SeleniumFramework\Login.class
+TestAutomationFramework\SeleniumFramework\ProductDetails.class
+TestAutomationFramework\SeleniumFramework\CommonUtil.class
+TestAutomationFramework\SeleniumFramework\ConfirmationPage.class
+TestAutomationFramework\SeleniumFramework\CartPage.class
+TestAutomationFramework\SeleniumFramework\Orders.class
+TestAutomationFramework\SeleniumFramework\Resources\ExtendReporterNG.class
+TestAutomationFramework\SeleniumFramework\FinalCheckout.class

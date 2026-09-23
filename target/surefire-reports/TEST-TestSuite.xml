@@ -1,0 +1,407 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="19.942" tests="13" errors="0" skipped="5" failures="8">
+  <properties>
+    <property name="java.specification.version" value="25"/>
+    <property name="webdriver.chrome.driver" value="C:\Users\Irins\.cache\selenium\chromedriver\win64\154.0.8037.57\chromedriver.exe"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.class.path" value="D:\Irin\TestAutomation\SeleniumFramework\target\test-classes;D:\Irin\TestAutomation\SeleniumFramework\target\classes;C:\Users\Irins\.m2\repository\org\seleniumhq\selenium\selenium-java\4.45.0\selenium-java-4.45.0.jar;C:\Users\Irins\.m2\repository\org\seleniumhq\selenium\selenium-api\4.45.0\selenium-api-4.45.0.jar;C:\Users\Irins\.m2\repository\org\jspecify\jspecify\1.0.0\jspecify-1.0.0.jar;C:\Users\Irins\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\4.45.0\selenium-chrome-driver-4.45.0.jar;C:\Users\Irins\.m2\repository\com\google\auto\service\auto-service-annotations\1.1.1\auto-service-annotations-1.1.1.jar;C:\Users\Irins\.m2\repository\org\seleniumhq\selenium\selenium-chromium-driver\4.45.0\selenium-chromium-driver-4.45.0.jar;C:\Users\Irins\.m2\repository\org\seleniumhq\selenium\selenium-json\4.45.0\selenium-json-4.45.0.jar;C:\Users\Irins\.m2\repository\org\seleniumhq\selenium\selenium-manager\4.45.0\selenium-manager-4.45.0.jar;C:\Users\Irins\.m2\repository\org\seleniumhq\selenium\selenium-devtools-latest\4.45.0\selenium-devtools-latest-4.45.0.jar;C:\Users\Irins\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v147\4.45.0\selenium-devtools-v147-4.45.0.jar;C:\Users\Irins\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v148\4.45.0\selenium-devtools-v148-4.45.0.jar;C:\Users\Irins\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v149\4.45.0\selenium-devtools-v149-4.45.0.jar;C:\Users\Irins\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\4.45.0\selenium-edge-driver-4.45.0.jar;C:\Users\Irins\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\4.45.0\selenium-firefox-driver-4.45.0.jar;C:\Users\Irins\.m2\repository\org\seleniumhq\selenium\selenium-http\4.45.0\selenium-http-4.45.0.jar;C:\Users\Irins\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\4.45.0\selenium-ie-driver-4.45.0.jar;C:\Users\Irins\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\4.45.0\selenium-remote-driver-4.45.0.jar;C:\Users\Irins\.m2\repository\com\google\guava\guava\33.6.0-jre\guava-33.6.0-jre.jar;C:\Users\Irins\.m2\repository\com\google\guava\failureaccess\1.0.3\failureaccess-1.0.3.jar;C:\Users\Irins\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\Irins\.m2\repository\com\google\j2objc\j2objc-annotations\3.1\j2objc-annotations-3.1.jar;C:\Users\Irins\.m2\repository\io\opentelemetry\opentelemetry-api\1.63.0\opentelemetry-api-1.63.0.jar;C:\Users\Irins\.m2\repository\io\opentelemetry\opentelemetry-context\1.63.0\opentelemetry-context-1.63.0.jar;C:\Users\Irins\.m2\repository\io\opentelemetry\opentelemetry-common\1.63.0\opentelemetry-common-1.63.0.jar;C:\Users\Irins\.m2\repository\io\opentelemetry\opentelemetry-exporter-logging\1.63.0\opentelemetry-exporter-logging-1.63.0.jar;C:\Users\Irins\.m2\repository\io\opentelemetry\opentelemetry-sdk-common\1.63.0\opentelemetry-sdk-common-1.63.0.jar;C:\Users\Irins\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure-spi\1.63.0\opentelemetry-sdk-extension-autoconfigure-spi-1.63.0.jar;C:\Users\Irins\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure\1.63.0\opentelemetry-sdk-extension-autoconfigure-1.63.0.jar;C:\Users\Irins\.m2\repository\io\opentelemetry\opentelemetry-sdk-trace\1.63.0\opentelemetry-sdk-trace-1.63.0.jar;C:\Users\Irins\.m2\repository\io\opentelemetry\opentelemetry-sdk\1.63.0\opentelemetry-sdk-1.63.0.jar;C:\Users\Irins\.m2\repository\io\opentelemetry\opentelemetry-sdk-metrics\1.63.0\opentelemetry-sdk-metrics-1.63.0.jar;C:\Users\Irins\.m2\repository\io\opentelemetry\opentelemetry-sdk-logs\1.63.0\opentelemetry-sdk-logs-1.63.0.jar;C:\Users\Irins\.m2\repository\net\bytebuddy\byte-buddy\1.18.10\byte-buddy-1.18.10.jar;C:\Users\Irins\.m2\repository\org\seleniumhq\selenium\selenium-os\4.45.0\selenium-os-4.45.0.jar;C:\Users\Irins\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\4.45.0\selenium-safari-driver-4.45.0.jar;C:\Users\Irins\.m2\repository\org\seleniumhq\selenium\selenium-support\4.45.0\selenium-support-4.45.0.jar;C:\Users\Irins\.m2\repository\io\github\bonigarcia\webdrivermanager\6.3.4\webdrivermanager-6.3.4.jar;C:\Users\Irins\.m2\repository\org\slf4j\slf4j-api\2.0.17\slf4j-api-2.0.17.jar;C:\Users\Irins\.m2\repository\com\google\code\gson\gson\2.13.2\gson-2.13.2.jar;C:\Users\Irins\.m2\repository\com\google\errorprone\error_prone_annotations\2.41.0\error_prone_annotations-2.41.0.jar;C:\Users\Irins\.m2\repository\com\github\docker-java\docker-java\3.7.1\docker-java-3.7.1.jar;C:\Users\Irins\.m2\repository\com\github\docker-java\docker-java-core\3.7.1\docker-java-core-3.7.1.jar;C:\Users\Irins\.m2\repository\com\github\docker-java\docker-java-api\3.7.1\docker-java-api-3.7.1.jar;C:\Users\Irins\.m2\repository\org\slf4j\jcl-over-slf4j\1.7.30\jcl-over-slf4j-1.7.30.jar;C:\Users\Irins\.m2\repository\com\github\docker-java\docker-java-transport-httpclient5\3.7.1\docker-java-transport-httpclient5-3.7.1.jar;C:\Users\Irins\.m2\repository\com\github\docker-java\docker-java-transport\3.7.1\docker-java-transport-3.7.1.jar;C:\Users\Irins\.m2\repository\net\java\dev\jna\jna\5.18.1\jna-5.18.1.jar;C:\Users\Irins\.m2\repository\org\brotli\dec\0.1.2\dec-0.1.2.jar;C:\Users\Irins\.m2\repository\org\apache\commons\commons-lang3\3.20.0\commons-lang3-3.20.0.jar;C:\Users\Irins\.m2\repository\org\apache\commons\commons-compress\1.28.0\commons-compress-1.28.0.jar;C:\Users\Irins\.m2\repository\commons-codec\commons-codec\1.19.0\commons-codec-1.19.0.jar;C:\Users\Irins\.m2\repository\commons-io\commons-io\2.20.0\commons-io-2.20.0.jar;C:\Users\Irins\.m2\repository\org\apache\httpcomponents\client5\httpclient5\5.6\httpclient5-5.6.jar;C:\Users\Irins\.m2\repository\org\apache\httpcomponents\core5\httpcore5\5.4\httpcore5-5.4.jar;C:\Users\Irins\.m2\repository\org\apache\httpcomponents\core5\httpcore5-h2\5.4\httpcore5-h2-5.4.jar;C:\Users\Irins\.m2\repository\org\testng\testng\7.12.0\testng-7.12.0.jar;C:\Users\Irins\.m2\repository\org\jcommander\jcommander\1.83\jcommander-1.83.jar;C:\Users\Irins\.m2\repository\org\webjars\jquery\3.7.1\jquery-3.7.1.jar;C:\Users\Irins\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.22.2\jackson-databind-2.22.2.jar;C:\Users\Irins\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.22\jackson-annotations-2.22.jar;C:\Users\Irins\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.22.2\jackson-core-2.22.2.jar;C:\Users\Irins\.m2\repository\com\aventstack\extentreports\5.1.2\extentreports-5.1.2.jar;C:\Users\Irins\.m2\repository\io\reactivex\rxjava3\rxjava\3.1.6\rxjava-3.1.6.jar;C:\Users\Irins\.m2\repository\org\reactivestreams\reactive-streams\1.0.4\reactive-streams-1.0.4.jar;C:\Users\Irins\.m2\repository\org\freemarker\freemarker\2.3.32\freemarker-2.3.32.jar;C:\Users\Irins\.m2\repository\org\projectlombok\lombok\1.18.26\lombok-1.18.26.jar;C:\Users\Irins\.m2\repository\io\cucumber\cucumber-java\7.34.8\cucumber-java-7.34.8.jar;C:\Users\Irins\.m2\repository\io\cucumber\cucumber-core\7.34.8\cucumber-core-7.34.8.jar;C:\Users\Irins\.m2\repository\io\cucumber\cucumber-gherkin\7.34.8\cucumber-gherkin-7.34.8.jar;C:\Users\Irins\.m2\repository\io\cucumber\cucumber-gherkin-messages\7.34.8\cucumber-gherkin-messages-7.34.8.jar;C:\Users\Irins\.m2\repository\io\cucumber\gherkin\36.1.0\gherkin-36.1.0.jar;C:\Users\Irins\.m2\repository\io\cucumber\messages\30.1.0\messages-30.1.0.jar;C:\Users\Irins\.m2\repository\io\cucumber\messages-ndjson\0.3.6\messages-ndjson-0.3.6.jar;C:\Users\Irins\.m2\repository\io\cucumber\pretty-formatter\2.4.1\pretty-formatter-2.4.1.jar;C:\Users\Irins\.m2\repository\io\cucumber\query\14.7.0\query-14.7.0.jar;C:\Users\Irins\.m2\repository\io\cucumber\teamcity-formatter\0.2.0\teamcity-formatter-0.2.0.jar;C:\Users\Irins\.m2\repository\io\cucumber\testng-xml-formatter\0.7.0\testng-xml-formatter-0.7.0.jar;C:\Users\Irins\.m2\repository\io\cucumber\usage-formatter\0.1.0\usage-formatter-0.1.0.jar;C:\Users\Irins\.m2\repository\io\cucumber\tag-expressions\8.1.0\tag-expressions-8.1.0.jar;C:\Users\Irins\.m2\repository\io\cucumber\cucumber-expressions\18.1.0\cucumber-expressions-18.1.0.jar;C:\Users\Irins\.m2\repository\io\cucumber\cucumber-json-formatter\0.3.2\cucumber-json-formatter-0.3.2.jar;C:\Users\Irins\.m2\repository\io\cucumber\datatable\7.34.8\datatable-7.34.8.jar;C:\Users\Irins\.m2\repository\io\cucumber\cucumber-plugin\7.34.8\cucumber-plugin-7.34.8.jar;C:\Users\Irins\.m2\repository\io\cucumber\docstring\7.34.8\docstring-7.34.8.jar;C:\Users\Irins\.m2\repository\io\cucumber\html-formatter\22.3.0\html-formatter-22.3.0.jar;C:\Users\Irins\.m2\repository\io\cucumber\junit-xml-formatter\0.11.0\junit-xml-formatter-0.11.0.jar;C:\Users\Irins\.m2\repository\io\cucumber\ci-environment\12.0.0\ci-environment-12.0.0.jar;C:\Users\Irins\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\Irins\.m2\repository\io\cucumber\cucumber-testng\7.34.8\cucumber-testng-7.34.8.jar;"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="https://java.oracle.com/"/>
+    <property name="user.timezone" value="Europe/Paris"/>
+    <property name="os.name" value="Windows 11"/>
+    <property name="java.vm.specification.version" value="25"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="IN"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-25.0.3\bin"/>
+    <property name="sun.java.command" value="C:\Users\Irins\AppData\Local\Temp\surefire11063974746286187542\surefirebooter-20260923170450289_3.jar C:\Users\Irins\AppData\Local\Temp\surefire11063974746286187542 2026-09-23T17-04-50_057-jvmRun1 surefire-20260923170450289_1tmp surefire_0-20260923170450289_2tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="D:\Irin\TestAutomation\SeleniumFramework\target\test-classes;D:\Irin\TestAutomation\SeleniumFramework\target\classes;C:\Users\Irins\.m2\repository\org\seleniumhq\selenium\selenium-java\4.45.0\selenium-java-4.45.0.jar;C:\Users\Irins\.m2\repository\org\seleniumhq\selenium\selenium-api\4.45.0\selenium-api-4.45.0.jar;C:\Users\Irins\.m2\repository\org\jspecify\jspecify\1.0.0\jspecify-1.0.0.jar;C:\Users\Irins\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\4.45.0\selenium-chrome-driver-4.45.0.jar;C:\Users\Irins\.m2\repository\com\google\auto\service\auto-service-annotations\1.1.1\auto-service-annotations-1.1.1.jar;C:\Users\Irins\.m2\repository\org\seleniumhq\selenium\selenium-chromium-driver\4.45.0\selenium-chromium-driver-4.45.0.jar;C:\Users\Irins\.m2\repository\org\seleniumhq\selenium\selenium-json\4.45.0\selenium-json-4.45.0.jar;C:\Users\Irins\.m2\repository\org\seleniumhq\selenium\selenium-manager\4.45.0\selenium-manager-4.45.0.jar;C:\Users\Irins\.m2\repository\org\seleniumhq\selenium\selenium-devtools-latest\4.45.0\selenium-devtools-latest-4.45.0.jar;C:\Users\Irins\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v147\4.45.0\selenium-devtools-v147-4.45.0.jar;C:\Users\Irins\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v148\4.45.0\selenium-devtools-v148-4.45.0.jar;C:\Users\Irins\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v149\4.45.0\selenium-devtools-v149-4.45.0.jar;C:\Users\Irins\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\4.45.0\selenium-edge-driver-4.45.0.jar;C:\Users\Irins\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\4.45.0\selenium-firefox-driver-4.45.0.jar;C:\Users\Irins\.m2\repository\org\seleniumhq\selenium\selenium-http\4.45.0\selenium-http-4.45.0.jar;C:\Users\Irins\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\4.45.0\selenium-ie-driver-4.45.0.jar;C:\Users\Irins\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\4.45.0\selenium-remote-driver-4.45.0.jar;C:\Users\Irins\.m2\repository\com\google\guava\guava\33.6.0-jre\guava-33.6.0-jre.jar;C:\Users\Irins\.m2\repository\com\google\guava\failureaccess\1.0.3\failureaccess-1.0.3.jar;C:\Users\Irins\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\Irins\.m2\repository\com\google\j2objc\j2objc-annotations\3.1\j2objc-annotations-3.1.jar;C:\Users\Irins\.m2\repository\io\opentelemetry\opentelemetry-api\1.63.0\opentelemetry-api-1.63.0.jar;C:\Users\Irins\.m2\repository\io\opentelemetry\opentelemetry-context\1.63.0\opentelemetry-context-1.63.0.jar;C:\Users\Irins\.m2\repository\io\opentelemetry\opentelemetry-common\1.63.0\opentelemetry-common-1.63.0.jar;C:\Users\Irins\.m2\repository\io\opentelemetry\opentelemetry-exporter-logging\1.63.0\opentelemetry-exporter-logging-1.63.0.jar;C:\Users\Irins\.m2\repository\io\opentelemetry\opentelemetry-sdk-common\1.63.0\opentelemetry-sdk-common-1.63.0.jar;C:\Users\Irins\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure-spi\1.63.0\opentelemetry-sdk-extension-autoconfigure-spi-1.63.0.jar;C:\Users\Irins\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure\1.63.0\opentelemetry-sdk-extension-autoconfigure-1.63.0.jar;C:\Users\Irins\.m2\repository\io\opentelemetry\opentelemetry-sdk-trace\1.63.0\opentelemetry-sdk-trace-1.63.0.jar;C:\Users\Irins\.m2\repository\io\opentelemetry\opentelemetry-sdk\1.63.0\opentelemetry-sdk-1.63.0.jar;C:\Users\Irins\.m2\repository\io\opentelemetry\opentelemetry-sdk-metrics\1.63.0\opentelemetry-sdk-metrics-1.63.0.jar;C:\Users\Irins\.m2\repository\io\opentelemetry\opentelemetry-sdk-logs\1.63.0\opentelemetry-sdk-logs-1.63.0.jar;C:\Users\Irins\.m2\repository\net\bytebuddy\byte-buddy\1.18.10\byte-buddy-1.18.10.jar;C:\Users\Irins\.m2\repository\org\seleniumhq\selenium\selenium-os\4.45.0\selenium-os-4.45.0.jar;C:\Users\Irins\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\4.45.0\selenium-safari-driver-4.45.0.jar;C:\Users\Irins\.m2\repository\org\seleniumhq\selenium\selenium-support\4.45.0\selenium-support-4.45.0.jar;C:\Users\Irins\.m2\repository\io\github\bonigarcia\webdrivermanager\6.3.4\webdrivermanager-6.3.4.jar;C:\Users\Irins\.m2\repository\org\slf4j\slf4j-api\2.0.17\slf4j-api-2.0.17.jar;C:\Users\Irins\.m2\repository\com\google\code\gson\gson\2.13.2\gson-2.13.2.jar;C:\Users\Irins\.m2\repository\com\google\errorprone\error_prone_annotations\2.41.0\error_prone_annotations-2.41.0.jar;C:\Users\Irins\.m2\repository\com\github\docker-java\docker-java\3.7.1\docker-java-3.7.1.jar;C:\Users\Irins\.m2\repository\com\github\docker-java\docker-java-core\3.7.1\docker-java-core-3.7.1.jar;C:\Users\Irins\.m2\repository\com\github\docker-java\docker-java-api\3.7.1\docker-java-api-3.7.1.jar;C:\Users\Irins\.m2\repository\org\slf4j\jcl-over-slf4j\1.7.30\jcl-over-slf4j-1.7.30.jar;C:\Users\Irins\.m2\repository\com\github\docker-java\docker-java-transport-httpclient5\3.7.1\docker-java-transport-httpclient5-3.7.1.jar;C:\Users\Irins\.m2\repository\com\github\docker-java\docker-java-transport\3.7.1\docker-java-transport-3.7.1.jar;C:\Users\Irins\.m2\repository\net\java\dev\jna\jna\5.18.1\jna-5.18.1.jar;C:\Users\Irins\.m2\repository\org\brotli\dec\0.1.2\dec-0.1.2.jar;C:\Users\Irins\.m2\repository\org\apache\commons\commons-lang3\3.20.0\commons-lang3-3.20.0.jar;C:\Users\Irins\.m2\repository\org\apache\commons\commons-compress\1.28.0\commons-compress-1.28.0.jar;C:\Users\Irins\.m2\repository\commons-codec\commons-codec\1.19.0\commons-codec-1.19.0.jar;C:\Users\Irins\.m2\repository\commons-io\commons-io\2.20.0\commons-io-2.20.0.jar;C:\Users\Irins\.m2\repository\org\apache\httpcomponents\client5\httpclient5\5.6\httpclient5-5.6.jar;C:\Users\Irins\.m2\repository\org\apache\httpcomponents\core5\httpcore5\5.4\httpcore5-5.4.jar;C:\Users\Irins\.m2\repository\org\apache\httpcomponents\core5\httpcore5-h2\5.4\httpcore5-h2-5.4.jar;C:\Users\Irins\.m2\repository\org\testng\testng\7.12.0\testng-7.12.0.jar;C:\Users\Irins\.m2\repository\org\jcommander\jcommander\1.83\jcommander-1.83.jar;C:\Users\Irins\.m2\repository\org\webjars\jquery\3.7.1\jquery-3.7.1.jar;C:\Users\Irins\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.22.2\jackson-databind-2.22.2.jar;C:\Users\Irins\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.22\jackson-annotations-2.22.jar;C:\Users\Irins\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.22.2\jackson-core-2.22.2.jar;C:\Users\Irins\.m2\repository\com\aventstack\extentreports\5.1.2\extentreports-5.1.2.jar;C:\Users\Irins\.m2\repository\io\reactivex\rxjava3\rxjava\3.1.6\rxjava-3.1.6.jar;C:\Users\Irins\.m2\repository\org\reactivestreams\reactive-streams\1.0.4\reactive-streams-1.0.4.jar;C:\Users\Irins\.m2\repository\org\freemarker\freemarker\2.3.32\freemarker-2.3.32.jar;C:\Users\Irins\.m2\repository\org\projectlombok\lombok\1.18.26\lombok-1.18.26.jar;C:\Users\Irins\.m2\repository\io\cucumber\cucumber-java\7.34.8\cucumber-java-7.34.8.jar;C:\Users\Irins\.m2\repository\io\cucumber\cucumber-core\7.34.8\cucumber-core-7.34.8.jar;C:\Users\Irins\.m2\repository\io\cucumber\cucumber-gherkin\7.34.8\cucumber-gherkin-7.34.8.jar;C:\Users\Irins\.m2\repository\io\cucumber\cucumber-gherkin-messages\7.34.8\cucumber-gherkin-messages-7.34.8.jar;C:\Users\Irins\.m2\repository\io\cucumber\gherkin\36.1.0\gherkin-36.1.0.jar;C:\Users\Irins\.m2\repository\io\cucumber\messages\30.1.0\messages-30.1.0.jar;C:\Users\Irins\.m2\repository\io\cucumber\messages-ndjson\0.3.6\messages-ndjson-0.3.6.jar;C:\Users\Irins\.m2\repository\io\cucumber\pretty-formatter\2.4.1\pretty-formatter-2.4.1.jar;C:\Users\Irins\.m2\repository\io\cucumber\query\14.7.0\query-14.7.0.jar;C:\Users\Irins\.m2\repository\io\cucumber\teamcity-formatter\0.2.0\teamcity-formatter-0.2.0.jar;C:\Users\Irins\.m2\repository\io\cucumber\testng-xml-formatter\0.7.0\testng-xml-formatter-0.7.0.jar;C:\Users\Irins\.m2\repository\io\cucumber\usage-formatter\0.1.0\usage-formatter-0.1.0.jar;C:\Users\Irins\.m2\repository\io\cucumber\tag-expressions\8.1.0\tag-expressions-8.1.0.jar;C:\Users\Irins\.m2\repository\io\cucumber\cucumber-expressions\18.1.0\cucumber-expressions-18.1.0.jar;C:\Users\Irins\.m2\repository\io\cucumber\cucumber-json-formatter\0.3.2\cucumber-json-formatter-0.3.2.jar;C:\Users\Irins\.m2\repository\io\cucumber\datatable\7.34.8\datatable-7.34.8.jar;C:\Users\Irins\.m2\repository\io\cucumber\cucumber-plugin\7.34.8\cucumber-plugin-7.34.8.jar;C:\Users\Irins\.m2\repository\io\cucumber\docstring\7.34.8\docstring-7.34.8.jar;C:\Users\Irins\.m2\repository\io\cucumber\html-formatter\22.3.0\html-formatter-22.3.0.jar;C:\Users\Irins\.m2\repository\io\cucumber\junit-xml-formatter\0.11.0\junit-xml-formatter-0.11.0.jar;C:\Users\Irins\.m2\repository\io\cucumber\ci-environment\12.0.0\ci-environment-12.0.0.jar;C:\Users\Irins\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\Irins\.m2\repository\io\cucumber\cucumber-testng\7.34.8\cucumber-testng-7.34.8.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\Irins"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2026-04-21"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk-25.0.3"/>
+    <property name="file.separator" value="\"/>
+    <property name="basedir" value="D:\Irin\TestAutomation\SeleniumFramework"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="surefire.real.class.path" value="C:\Users\Irins\AppData\Local\Temp\surefire11063974746286187542\surefirebooter-20260923170450289_3.jar"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="25.0.3+9-LTS-195"/>
+    <property name="user.name" value="Irins"/>
+    <property name="stdout.encoding" value="Cp1252"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="browser" value="chrome"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="localRepository" value="C:\Users\Irins\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="C:\Users\Irins\AppData\Local\Temp\"/>
+    <property name="java.version" value="25.0.3"/>
+    <property name="user.dir" value="D:\Irin\TestAutomation\SeleniumFramework"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="native.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk-25.0.3\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\dotnet\;C:\Program Files\Java\jdk-25.0.3\bin;%MAVEN_HOME%\bin;D:\Irin\Softwares and Dependencies\apache-maven-3.9.16\bin;C:\Users\Irins\AppData\Local\Microsoft\WindowsApps;;."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="stderr.encoding" value="Cp1252"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="25.0.3+9-LTS-195"/>
+    <property name="stdin.encoding" value="Cp1252"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="69.0"/>
+  </properties>
+  <testcase name="lauchApplication" classname="TestAutomationFramework.SeleniumFramework.Testcases.ErrorValidation" time="15.636">
+    <failure message="Could not start a new session. Response code 500. Message: session not created&#10;from unknown error: cannot find Chrome binary &#10;Host info: host: &apos;LAZY_PANDA&apos;, ip: &apos;192.168.0.13&apos;&#10;Build info: version: &apos;4.45.0&apos;, revision: &apos;cd6a3cd cd6a3cdfca6970f62e5bc8344109d0fe0e2af05e&apos;&#10;System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;25.0.3&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}]}]&#10;Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}" type="org.openqa.selenium.SessionNotCreatedException"><![CDATA[org.openqa.selenium.SessionNotCreatedException: 
+Could not start a new session. Response code 500. Message: session not created
+from unknown error: cannot find Chrome binary 
+Host info: host: 'LAZY_PANDA', ip: '192.168.0.13'
+Build info: version: '4.45.0', revision: 'cd6a3cd cd6a3cdfca6970f62e5bc8344109d0fe0e2af05e'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '25.0.3'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}]}]
+Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:115)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:76)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:62)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:171)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:217)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:575)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:259)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:204)
+	at org.openqa.selenium.chromium.ChromiumDriver.<init>(ChromiumDriver.java:114)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:92)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:87)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:51)
+	at TestAutomationFramework.TestComponents.BaseTest.initializeDriver(BaseTest.java:44)
+	at TestAutomationFramework.TestComponents.BaseTest.lauchApplication(BaseTest.java:84)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+	at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:846)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:611)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:1005)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+]]></failure>
+    <system-err><![CDATA[SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+]]></system-err>
+  </testcase>
+  <testcase name="lauchApplication" classname="TestAutomationFramework.SeleniumFramework.Testcases.ErrorValidation" time="0.67">
+    <failure message="Could not start a new session. Response code 500. Message: session not created&#10;from unknown error: cannot find Chrome binary &#10;Host info: host: &apos;LAZY_PANDA&apos;, ip: &apos;192.168.0.13&apos;&#10;Build info: version: &apos;4.45.0&apos;, revision: &apos;cd6a3cd cd6a3cdfca6970f62e5bc8344109d0fe0e2af05e&apos;&#10;System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;25.0.3&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}]}]&#10;Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}" type="org.openqa.selenium.SessionNotCreatedException"><![CDATA[org.openqa.selenium.SessionNotCreatedException: 
+Could not start a new session. Response code 500. Message: session not created
+from unknown error: cannot find Chrome binary 
+Host info: host: 'LAZY_PANDA', ip: '192.168.0.13'
+Build info: version: '4.45.0', revision: 'cd6a3cd cd6a3cdfca6970f62e5bc8344109d0fe0e2af05e'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '25.0.3'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}]}]
+Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:115)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:76)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:62)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:171)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:217)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:575)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:259)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:204)
+	at org.openqa.selenium.chromium.ChromiumDriver.<init>(ChromiumDriver.java:114)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:92)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:87)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:51)
+	at TestAutomationFramework.TestComponents.BaseTest.initializeDriver(BaseTest.java:44)
+	at TestAutomationFramework.TestComponents.BaseTest.lauchApplication(BaseTest.java:84)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+	at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:846)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:611)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:1005)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+]]></failure>
+  </testcase>
+  <testcase name="LoginErrorValidation" classname="TestAutomationFramework.SeleniumFramework.Testcases.ErrorValidation" time="0.0">
+    <skipped message="Could not start a new session. Response code 500. Message: session not created&#10;from unknown error: cannot find Chrome binary &#10;Host info: host: &apos;LAZY_PANDA&apos;, ip: &apos;192.168.0.13&apos;&#10;Build info: version: &apos;4.45.0&apos;, revision: &apos;cd6a3cd cd6a3cdfca6970f62e5bc8344109d0fe0e2af05e&apos;&#10;System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;25.0.3&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}]}]&#10;Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}"/>
+  </testcase>
+  <testcase name="tearDown" classname="TestAutomationFramework.SeleniumFramework.Testcases.ErrorValidation" time="0.012">
+    <failure message="Cannot invoke &quot;org.openqa.selenium.WebDriver.close()&quot; because &quot;this.driver&quot; is null" type="java.lang.NullPointerException"><![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.close()" because "this.driver" is null
+	at TestAutomationFramework.TestComponents.BaseTest.tearDown(BaseTest.java:92)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+	at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:846)
+	at org.testng.internal.invokers.TestInvoker.runAfterConfigurations(TestInvoker.java:815)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:633)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:1005)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+]]></failure>
+  </testcase>
+  <testcase name="tearDown" classname="TestAutomationFramework.SeleniumFramework.Testcases.ErrorValidation" time="0.002">
+    <failure message="Cannot invoke &quot;org.openqa.selenium.WebDriver.close()&quot; because &quot;this.driver&quot; is null" type="java.lang.NullPointerException"><![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.close()" because "this.driver" is null
+	at TestAutomationFramework.TestComponents.BaseTest.tearDown(BaseTest.java:92)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+	at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:846)
+	at org.testng.internal.invokers.TestInvoker.runAfterConfigurations(TestInvoker.java:815)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:633)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:1005)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+]]></failure>
+  </testcase>
+  <testcase name="ProductErrorValidation" classname="TestAutomationFramework.SeleniumFramework.Testcases.ErrorValidation" time="0.0">
+    <skipped message="Could not start a new session. Response code 500. Message: session not created&#10;from unknown error: cannot find Chrome binary &#10;Host info: host: &apos;LAZY_PANDA&apos;, ip: &apos;192.168.0.13&apos;&#10;Build info: version: &apos;4.45.0&apos;, revision: &apos;cd6a3cd cd6a3cdfca6970f62e5bc8344109d0fe0e2af05e&apos;&#10;System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;25.0.3&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}]}]&#10;Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}"/>
+  </testcase>
+  <testcase name="lauchApplication" classname="TestAutomationFramework.SeleniumFramework.Testcases.EndtoEndTestCase" time="0.14">
+    <failure message="Could not start a new session. Response code 500. Message: session not created&#10;from unknown error: cannot find Chrome binary &#10;Host info: host: &apos;LAZY_PANDA&apos;, ip: &apos;192.168.0.13&apos;&#10;Build info: version: &apos;4.45.0&apos;, revision: &apos;cd6a3cd cd6a3cdfca6970f62e5bc8344109d0fe0e2af05e&apos;&#10;System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;25.0.3&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}]}]&#10;Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}" type="org.openqa.selenium.SessionNotCreatedException"><![CDATA[org.openqa.selenium.SessionNotCreatedException: 
+Could not start a new session. Response code 500. Message: session not created
+from unknown error: cannot find Chrome binary 
+Host info: host: 'LAZY_PANDA', ip: '192.168.0.13'
+Build info: version: '4.45.0', revision: 'cd6a3cd cd6a3cdfca6970f62e5bc8344109d0fe0e2af05e'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '25.0.3'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}]}]
+Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:115)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:76)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:62)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:171)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:217)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:575)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:259)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:204)
+	at org.openqa.selenium.chromium.ChromiumDriver.<init>(ChromiumDriver.java:114)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:92)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:87)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:51)
+	at TestAutomationFramework.TestComponents.BaseTest.initializeDriver(BaseTest.java:44)
+	at TestAutomationFramework.TestComponents.BaseTest.lauchApplication(BaseTest.java:84)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+	at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:846)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:611)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:1005)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+]]></failure>
+  </testcase>
+  <testcase name="lauchApplication" classname="TestAutomationFramework.SeleniumFramework.Testcases.EndtoEndTestCase" time="3.25">
+    <failure message="Could not start a new session. Response code 500. Message: session not created&#10;from unknown error: cannot find Chrome binary &#10;Host info: host: &apos;LAZY_PANDA&apos;, ip: &apos;192.168.0.13&apos;&#10;Build info: version: &apos;4.45.0&apos;, revision: &apos;cd6a3cd cd6a3cdfca6970f62e5bc8344109d0fe0e2af05e&apos;&#10;System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;25.0.3&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}]}]&#10;Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}" type="org.openqa.selenium.SessionNotCreatedException"><![CDATA[org.openqa.selenium.SessionNotCreatedException: 
+Could not start a new session. Response code 500. Message: session not created
+from unknown error: cannot find Chrome binary 
+Host info: host: 'LAZY_PANDA', ip: '192.168.0.13'
+Build info: version: '4.45.0', revision: 'cd6a3cd cd6a3cdfca6970f62e5bc8344109d0fe0e2af05e'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '25.0.3'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}]}]
+Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:115)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:76)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:62)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:171)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:217)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:575)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:259)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:204)
+	at org.openqa.selenium.chromium.ChromiumDriver.<init>(ChromiumDriver.java:114)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:92)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:87)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:51)
+	at TestAutomationFramework.TestComponents.BaseTest.initializeDriver(BaseTest.java:44)
+	at TestAutomationFramework.TestComponents.BaseTest.lauchApplication(BaseTest.java:84)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+	at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:846)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:611)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:1005)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+]]></failure>
+  </testcase>
+  <testcase name="submitOrder[{password=T3ster@., email=testemail2026@outlook.com, productName=ZARA COAT 3}](1)" classname="TestAutomationFramework.SeleniumFramework.Testcases.EndtoEndTestCase" time="0.0">
+    <skipped message="Could not start a new session. Response code 500. Message: session not created&#10;from unknown error: cannot find Chrome binary &#10;Host info: host: &apos;LAZY_PANDA&apos;, ip: &apos;192.168.0.13&apos;&#10;Build info: version: &apos;4.45.0&apos;, revision: &apos;cd6a3cd cd6a3cdfca6970f62e5bc8344109d0fe0e2af05e&apos;&#10;System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;25.0.3&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}]}]&#10;Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}"/>
+  </testcase>
+  <testcase name="tearDown" classname="TestAutomationFramework.SeleniumFramework.Testcases.EndtoEndTestCase" time="0.002">
+    <failure message="Cannot invoke &quot;org.openqa.selenium.WebDriver.close()&quot; because &quot;this.driver&quot; is null" type="java.lang.NullPointerException"><![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.close()" because "this.driver" is null
+	at TestAutomationFramework.TestComponents.BaseTest.tearDown(BaseTest.java:92)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+	at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:846)
+	at org.testng.internal.invokers.TestInvoker.runAfterConfigurations(TestInvoker.java:815)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:633)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:1005)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+]]></failure>
+  </testcase>
+  <testcase name="tearDown" classname="TestAutomationFramework.SeleniumFramework.Testcases.EndtoEndTestCase" time="0.002">
+    <failure message="Cannot invoke &quot;org.openqa.selenium.WebDriver.close()&quot; because &quot;this.driver&quot; is null" type="java.lang.NullPointerException"><![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.close()" because "this.driver" is null
+	at TestAutomationFramework.TestComponents.BaseTest.tearDown(BaseTest.java:92)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+	at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:846)
+	at org.testng.internal.invokers.TestInvoker.runAfterConfigurations(TestInvoker.java:815)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:633)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:1005)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+]]></failure>
+  </testcase>
+  <testcase name="submitOrder[{password=Wine@2026, email=Wine2026@outlook.com, productName=ADIDAS ORIGINAL}](2)" classname="TestAutomationFramework.SeleniumFramework.Testcases.EndtoEndTestCase" time="0.0">
+    <skipped message="Cannot invoke &quot;org.openqa.selenium.WebDriver.close()&quot; because &quot;this.driver&quot; is null"/>
+  </testcase>
+  <testcase name="verifyOrdersHistory" classname="TestAutomationFramework.SeleniumFramework.Testcases.EndtoEndTestCase" time="0.0">
+    <skipped message="Method TestAutomationFramework.SeleniumFramework.Testcases.EndtoEndTestCase.verifyOrdersHistory() on instance TestAutomationFramework.SeleniumFramework.Testcases.EndtoEndTestCase@402c4085 depends on not successfully finished methods &#10;[TestAutomationFramework.SeleniumFramework.Testcases.EndtoEndTestCase.submitOrder() on instance TestAutomationFramework.SeleniumFramework.Testcases.EndtoEndTestCase@402c4085]"/>
+  </testcase>
+</testsuite>
