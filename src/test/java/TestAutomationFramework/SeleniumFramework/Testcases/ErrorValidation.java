@@ -8,7 +8,7 @@ import TestAutomationFramework.TestComponents.BaseTest;
 import TestAutomationFramework.TestComponents.Retry;
 
 public class ErrorValidation extends BaseTest {
-
+//Sample trigger with inegration with jenkins and github webhook
 	@Test(groups= {"ErrorHandling"},retryAnalyzer=Retry.class)
 	public void LoginErrorValidation() throws IOException, InterruptedException {
 
