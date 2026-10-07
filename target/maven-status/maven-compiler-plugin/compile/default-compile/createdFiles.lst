@@ -4,5 +4,6 @@ TestAutomationFramework\SeleniumFramework\CommonUtil.class
 TestAutomationFramework\SeleniumFramework\ConfirmationPage.class
 TestAutomationFramework\SeleniumFramework\CartPage.class
 TestAutomationFramework\SeleniumFramework\Orders.class
+TestAutomationFramework\SeleniumFramework\Registration.class
 TestAutomationFramework\SeleniumFramework\Resources\ExtendReporterNG.class
 TestAutomationFramework\SeleniumFramework\FinalCheckout.class

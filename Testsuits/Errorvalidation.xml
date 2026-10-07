@@ -4,11 +4,13 @@
 <groups>
 <run>
 <include name="ErrorHandling"/>
+<include name="Registration"/>
 </run>
 </groups>
   <test thread-count="5" name="ErrorValidations">
     <classes>
       <class name="TestAutomationFramework.SeleniumFramework.Testcases.ErrorValidation"/>
+      <class name="TestAutomationFramework.SeleniumFramework.Testcases.RegistrationValidation"/>
     </classes>
        </test>
 

@@ -31,6 +31,9 @@ public class Login extends CommonUtil
 	WebElement loginbtn;
 	@FindBy(xpath="//div[@role='alert']")
 	WebElement errorMsg;
+
+	@FindBy(linkText="Register here")
+	WebElement registerLink;
 	
 	public ProductDetails loginMethod(String email,String pwd)
 	{
@@ -39,6 +42,12 @@ public class Login extends CommonUtil
 	loginbtn.click();
 	ProductDetails productCatalog=new ProductDetails(driver);
 	return productCatalog;
+	}
+
+	public Registration gotoRegistration()
+	{
+		registerLink.click();
+		return new Registration(driver);
 	}
 	
 	public void openUrl()

@@ -8,6 +8,7 @@
   <test thread-count="5" name="ErrorValidations">
     <classes>
       <class name="TestAutomationFramework.SeleniumFramework.Testcases.ErrorValidation"/>
+      <class name="TestAutomationFramework.SeleniumFramework.Testcases.RegistrationValidation"/>
     </classes>
        </test>
 
