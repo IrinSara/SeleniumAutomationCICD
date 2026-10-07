@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Surefire test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>1/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>4/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Fri Sep 18 23:04:16 CEST 2026</td>
+<td>Started on:</td><td>Wed Oct 07 17:48:27 CEST 2026</td>
 </tr>
-<tr><td>Total time:</td><td>18 seconds (18384 ms)</td>
+<tr><td>Total time:</td><td>44 seconds (44855 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,6 +67,69 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='Cucumber.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: Cucumber.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Testcase for submitting an order", "Purchase an order from Ecommerce Page"</td>
+<td><div><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;button _ngcontent-wai-c33=&quot;&quot; routerlink=&quot;/dashboard/cart&quot; class=&quot;btn btn-custom&quot; style=&quot;margin-top: -10px;&quot; tabindex=&quot;0&quot;&gt;...&lt;/button&gt; is not clickable at point (1677, 27). Other element would receive the click: &lt;div _ngcontent-wai-c31=&quot;&quot; class=&quot;ngx-spinner-overlay ng-tns-c31-1 ng-trigger ng-trigger-fadeIn ng-star-inserted&quot; style=&quot;background-color: rgba(51, 51, 51, 0.8); z-index: 99999; position: fixed; opacity: 1;&quot;&gt;...&lt;/div&gt;
+  (Session info: MicrosoftEdge=154.0.4258.48)
+Build info: version: &apos;4.45.0&apos;, revision: &apos;cd6a3cd cd6a3cdfca6970f62e5bc8344109d0fe0e2af05e&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;25.0.3&apos;
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [aff6bbc0eaeb478bf3b382df84527b98, clickElement {id=f.615EEBEED0A81C6B92D31D9B9446A84A.d.59AC6D8E7AEEFB9F216D45626C2FC75F.e.67}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 154.0.4258.48, fedcm:accounts: true, goog:processID: 29932, ms:edgeOptions: {debuggerAddress: localhost:64987}, msedge: {msedgedriverVersion: 154.0.4258.62 (49f7c5590dad..., userDataDir: C:\Users\Irins\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64987/devtoo..., se:cdpVersion: 154.0.4258.48, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:cmtgKey: true, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[EdgeDriver: MicrosoftEdge on windows (aff6bbc0eaeb478bf3b382df84527b98)] -&gt; css selector: button[routerlink=&apos;/dashboard/cart&apos;]]
+Session ID: aff6bbc0eaeb478bf3b382df84527b98
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:169)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:143)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:196)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:217)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:575)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:225)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:79)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy21.click(Unknown Source)
+	at TestAutomationFramework.SeleniumFramework.CommonUtil.gotoCart(CommonUtil.java:29)
+	at TestAutomationFramework.stepDefinitions.StepDefinitions.checkout_and_submit_the_order(StepDefinitions.java:46)
+	at ✽.checkout ZARA COAT 3 and submit the order(file:///C:/Users/Irins/IdeaProjects/SeleniumAutomationCICD/src/test/java/Cucumber/demo.feature:15)
+... Removed 2 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1786872722", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1786872722'><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;button _ngcontent-wai-c33=&quot;&quot; routerlink=&quot;/dashboard/cart&quot; class=&quot;btn btn-custom&quot; style=&quot;margin-top: -10px;&quot; tabindex=&quot;0&quot;&gt;...&lt;/button&gt; is not clickable at point (1677, 27). Other element would receive the click: &lt;div _ngcontent-wai-c31=&quot;&quot; class=&quot;ngx-spinner-overlay ng-tns-c31-1 ng-trigger ng-trigger-fadeIn ng-star-inserted&quot; style=&quot;background-color: rgba(51, 51, 51, 0.8); z-index: 99999; position: fixed; opacity: 1;&quot;&gt;...&lt;/div&gt;
+  (Session info: MicrosoftEdge=154.0.4258.48)
+Build info: version: &apos;4.45.0&apos;, revision: &apos;cd6a3cd cd6a3cdfca6970f62e5bc8344109d0fe0e2af05e&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;25.0.3&apos;
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [aff6bbc0eaeb478bf3b382df84527b98, clickElement {id=f.615EEBEED0A81C6B92D31D9B9446A84A.d.59AC6D8E7AEEFB9F216D45626C2FC75F.e.67}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 154.0.4258.48, fedcm:accounts: true, goog:processID: 29932, ms:edgeOptions: {debuggerAddress: localhost:64987}, msedge: {msedgedriverVersion: 154.0.4258.62 (49f7c5590dad..., userDataDir: C:\Users\Irins\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64987/devtoo..., se:cdpVersion: 154.0.4258.48, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:cmtgKey: true, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[EdgeDriver: MicrosoftEdge on windows (aff6bbc0eaeb478bf3b382df84527b98)] -&gt; css selector: button[routerlink=&apos;/dashboard/cart&apos;]]
+Session ID: aff6bbc0eaeb478bf3b382df84527b98
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:169)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:143)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:196)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:217)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:575)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:225)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:79)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy21.click(Unknown Source)
+	at TestAutomationFramework.SeleniumFramework.CommonUtil.gotoCart(CommonUtil.java:29)
+	at TestAutomationFramework.stepDefinitions.StepDefinitions.checkout_and_submit_the_order(StepDefinitions.java:46)
+	at ✽.checkout ZARA COAT 3 and submit the order(file:///C:/Users/Irins/IdeaProjects/SeleniumAutomationCICD/src/test/java/Cucumber/demo.feature:15)
+</pre></div></td>
+<td>6</td>
+<td>Cucumber.TestNGTestRunner@47542153</td></tr>
+</table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -76,10 +139,25 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='Cucumber.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: Cucumber.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Testcase for submitting an order", "Purchase an order from Ecommerce Page"</td>
+<td title='TestAutomationFramework.SeleniumFramework.Testcases.EndtoEndTestCase.verifyOrdersHistory()'><b>verifyOrdersHistory</b><br>Test class: TestAutomationFramework.SeleniumFramework.Testcases.EndtoEndTestCase<br>Parameters: {password=Wine@2026, email=Wine2026@outlook.com, productName=ADIDAS ORIGINAL}</td>
 <td></td>
-<td>17</td>
-<td>Cucumber.TestNGTestRunner@11a9e7c8</td></tr>
+<td>0</td>
+<td>TestAutomationFramework.SeleniumFramework.Testcases.EndtoEndTestCase@3c9d0b9d</td></tr>
+<tr>
+<td title='TestAutomationFramework.SeleniumFramework.Testcases.EndtoEndTestCase.submitOrder()'><b>submitOrder</b><br>Test class: TestAutomationFramework.SeleniumFramework.Testcases.EndtoEndTestCase<br>Parameters: {password=Wine@2026, email=Wine2026@outlook.com, productName=ADIDAS ORIGINAL}</td>
+<td></td>
+<td>9</td>
+<td>TestAutomationFramework.SeleniumFramework.Testcases.EndtoEndTestCase@3c9d0b9d</td></tr>
+<tr>
+<td title='TestAutomationFramework.SeleniumFramework.Testcases.EndtoEndTestCase.submitOrder()'><b>submitOrder</b><br>Test class: TestAutomationFramework.SeleniumFramework.Testcases.EndtoEndTestCase<br>Parameters: {password=T3ster@., email=testemail2026@outlook.com, productName=ZARA COAT 3}</td>
+<td></td>
+<td>12</td>
+<td>TestAutomationFramework.SeleniumFramework.Testcases.EndtoEndTestCase@3c9d0b9d</td></tr>
+<tr>
+<td title='TestAutomationFramework.SeleniumFramework.Testcases.EndtoEndTestCase.verifyOrdersHistory()'><b>verifyOrdersHistory</b><br>Test class: TestAutomationFramework.SeleniumFramework.Testcases.EndtoEndTestCase<br>Parameters: {password=T3ster@., email=testemail2026@outlook.com, productName=ZARA COAT 3}</td>
+<td></td>
+<td>0</td>
+<td>TestAutomationFramework.SeleniumFramework.Testcases.EndtoEndTestCase@3c9d0b9d</td></tr>
 </table><p>
 </body>
 </html>

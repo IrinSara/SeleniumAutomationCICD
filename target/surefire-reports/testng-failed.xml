@@ -1,31 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite parallel="tests" name="Failed suite [Suite]" guice-stage="DEVELOPMENT" verbose="0">
-  <listeners>
-    <listener class-name="TestAutomationFramework.TestComponents.Listeners"/>
-  </listeners>
-  <test thread-count="5" parallel="tests" name="EndtoEnd(failed)" verbose="0">
+<suite name="Failed suite [Surefire suite]" verbose="0">
+  <test thread-count="5" name="Surefire test(failed)" verbose="0">
     <classes>
-      <class name="TestAutomationFramework.SeleniumFramework.Testcases.EndtoEndTestCase">
+      <class name="Cucumber.TestNGTestRunner">
         <methods>
-          <include name="submitOrder"/>
-          <include name="tearDown"/>
-          <include name="lauchApplication"/>
-          <include name="verifyOrdersHistory"/>
+          <include name="setUpClass"/>
+          <include name="tearDownClass"/>
+          <include name="runScenario" invocation-numbers="0"/>
         </methods>
-      </class> <!-- TestAutomationFramework.SeleniumFramework.Testcases.EndtoEndTestCase -->
+      </class> <!-- Cucumber.TestNGTestRunner -->
     </classes>
-  </test> <!-- EndtoEnd(failed) -->
-  <test thread-count="5" parallel="tests" name="ErrorValidations(failed)" verbose="0">
-    <classes>
-      <class name="TestAutomationFramework.SeleniumFramework.Testcases.ErrorValidation">
-        <methods>
-          <include name="LoginErrorValidation"/>
-          <include name="tearDown"/>
-          <include name="ProductErrorValidation"/>
-          <include name="lauchApplication"/>
-        </methods>
-      </class> <!-- TestAutomationFramework.SeleniumFramework.Testcases.ErrorValidation -->
-    </classes>
-  </test> <!-- ErrorValidations(failed) -->
-</suite> <!-- Failed suite [Suite] -->
+  </test> <!-- Surefire test(failed) -->
+</suite> <!-- Failed suite [Surefire suite] -->
