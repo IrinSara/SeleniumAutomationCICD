@@ -44,7 +44,7 @@ An end-to-end UI test automation framework for a web-based e-commerce applicatio
 | Build tool | Maven + Surefire | 3.2.5 |
 
 ## Application Under Test
-**[ADD: name and URL of the site you test]**. This is a demo/practice site used only for learning.
+Lets shop Web application https://rahulshettyacademy.com/client/. This is a practice site used only for learning.
 
 ## Project Structure
 ```
@@ -102,26 +102,26 @@ Each suite has its own Maven profile defined in `pom.xml`:
 
 ## Test Reports
 After a run, open the Extent Report in a browser:
+```
+report/TestReport/index.html]
+```
+<img width="1870" height="471" alt="image" src="https://github.com/user-attachments/assets/75637721-352d-43b0-bbdf-d6fa4bfefa50" />
 
-```
-[ADD: exact file path, e.g. reports/index.html]
-```
 
 Maven Surefire reports are in `target/surefire-reports/`.
 
-**[ADD: a screenshot of your report, e.g. `![Extent Report](Screenshots/report.png)`]**
+<img width="1823" height="935" alt="image" src="https://github.com/user-attachments/assets/16a813d7-95af-40c8-8926-22f0683745bc" />
+
 
 ## Scenarios Covered
 | # | Scenario | Suite |
 |---|---|---|
-| 1 | User registration | **[ADD]** |
-| 2 | Login with valid and invalid data | **[ADD]** |
+| 1 | User registration | Regressionm |
+| 2 | Login with valid and invalid data | Regression|
 | 3 | Product selection and add to cart | Purchase |
 | 4 | Checkout and order placement | Purchase |
-| 5 | Order history verification | **[ADD]** |
+| 5 | Order history verification | Regression |
 | 6 | Error and validation messages | Errorvalidation |
-
-> [ADD: edit this table to match your real test cases.]
 
 ## Framework Design
 - **Page layer:** one class per page (`Registration`, `Login`, `ProductDetails`, `CartPage`, `FinalCheckout`, `ConfirmationPage`, `Orders`), holding locators and actions. Tests never touch locators directly.
