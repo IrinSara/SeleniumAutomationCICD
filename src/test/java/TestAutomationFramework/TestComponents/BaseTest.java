@@ -4,6 +4,9 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.nio.charset.StandardCharsets;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
 import java.time.Duration;
 import java.util.HashMap;
 import java.util.List;
@@ -34,8 +37,7 @@ public Login loginPage;
 	public WebDriver initializeDriver() throws IOException
 	{
 	Properties prop=new Properties();
-	//FileInputStream fis=new FileInputStream(System.getProperty("user.dir")+"\\src\\main\\java\\TestAutomationFramework\\SeleniumFramework\\Resources\\GlobalData.properties");
-	FileInputStream fis=new FileInputStream("D:\\Irin\\TestAutomation\\SeleniumFramework\\src\\main\\java\\TestAutomationFramework\\SeleniumFramework\\Resources\\GlobalData.properties");
+	FileInputStream fis=new FileInputStream(Paths.get(System.getProperty("user.dir"), "src", "main", "java", "TestAutomationFramework", "SeleniumFramework", "Resources", "GlobalData.properties").toFile());
 	prop.load(fis);
 	String browserName=System.getProperty("browser")!=null ? System.getProperty("browser"):prop.getProperty("browser");
 	if(browserName.equalsIgnoreCase("chrome"))
@@ -72,9 +74,12 @@ public Login loginPage;
 	{
 		TakesScreenshot ts=(TakesScreenshot)driver;
 		File source=ts.getScreenshotAs(OutputType.FILE);
-		File file=new File(System.getProperty("user.dir")+"//reports//"+testCaseName+".png");
+		Path screenshotDirectory=Paths.get(System.getProperty("user.dir"), "test-artifacts", "screenshots");
+		Files.createDirectories(screenshotDirectory);
+		Path screenshotPath=screenshotDirectory.resolve(testCaseName+".png");
+		File file=screenshotPath.toFile();
 		FileUtils.copyFile(source, file);
-		return System.getProperty("user.dir")+"//reports//"+testCaseName+".png";
+		return screenshotPath.toString();
 		
 	}
 	

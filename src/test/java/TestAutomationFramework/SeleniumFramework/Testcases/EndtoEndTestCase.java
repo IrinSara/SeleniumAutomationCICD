@@ -1,6 +1,7 @@
 package TestAutomationFramework.SeleniumFramework.Testcases;
 
 import java.io.IOException;
+import java.nio.file.Paths;
 import java.util.HashMap;
 import java.util.List;
 
@@ -55,7 +56,7 @@ public class EndtoEndTestCase extends BaseTest
 	public Object[][] getData() throws IOException
 	{
 	
-		List<HashMap<String,String>> data=getJsonDataToMap("D:\\Irin\\TestAutomation\\SeleniumFramework\\src\\test\\java\\TestAutomationFramework\\TestData\\PurchaseOrder.json");
+		List<HashMap<String,String>> data=getJsonDataToMap(Paths.get(System.getProperty("user.dir"), "src", "test", "java", "TestAutomationFramework", "TestData", "PurchaseOrder.json").toString());
 		return  new Object[][] {{data.get(0)},{data.get(1)}};
 	}
 	

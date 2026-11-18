@@ -29,7 +29,7 @@ An end-to-end UI test automation framework for a web-based e-commerce applicatio
 - **Multiple suites:** regression, purchase flow and error-validation suites, each run through its own Maven profile.
 - **BDD with Cucumber:** business-readable scenarios executed through a TestNG runner.
 - **Extent Reports:** an HTML report for every run.
-- **Screenshots:** screenshots are saved in the `Screenshots/` folder. **[ADD: say when, e.g. "on test failure"]**
+- **Screenshots:** failure screenshots are saved under `test-artifacts/screenshots/`.
 
 ## Tech Stack
 | Area | Tool | Version |
@@ -66,8 +66,12 @@ SeleniumAutomationCICD
 │       ├── Cucumber                     # BDD feature files, step definitions and TestNG runner
 │       └── TestAutomationFramework      # TestNG test classes
 ├── Testsuits                            # TestNG suite files (testng.xml, Purchase.xml, Errorvalidation.xml)
-├── Screenshots                          # Screenshots captured during runs
-├── reports                              # Generated reports
+├── test-artifacts                       # Generated reports and screenshots
+│   ├── extent                           # Extent HTML report
+│   ├── screenshots                      # Failure screenshots
+│   ├── cucumber.html                    # Cucumber HTML report
+│   ├── surefire                          # Maven Surefire reports
+│   └── testng                           # TestNG reports when run directly
 ├── pom.xml                              # Dependencies and Maven profiles
 └── README.md
 ```
@@ -101,14 +105,14 @@ Each suite has its own Maven profile defined in `pom.xml`:
 | `CucumberTests` | Cucumber scenarios via `TestNGTestRunner` | `mvn clean test -PCucumberTests` |
 
 ## Test Reports
-After a run, open the Extent Report in a browser:
+Generated test artifacts are grouped under `test-artifacts/`. After a run, open the Extent Report in a browser:
 ```
-report/TestReport/index.html]
+test-artifacts/extent/ExtentReport.html
 ```
 <img width="1870" height="471" alt="image" src="https://github.com/user-attachments/assets/75637721-352d-43b0-bbdf-d6fa4bfefa50" />
 
 
-Maven Surefire reports are in `target/surefire-reports/`.
+Maven Surefire reports are in `test-artifacts/surefire/`. Cucumber HTML output is `test-artifacts/cucumber.html`.
 
 <img width="1823" height="935" alt="image" src="https://github.com/user-attachments/assets/16a813d7-95af-40c8-8926-22f0683745bc" />
 

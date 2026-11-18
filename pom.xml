@@ -54,7 +54,12 @@
     <groupId>com.aventstack</groupId>
     <artifactId>extentreports</artifactId>
     <version>5.1.2</version>
-    
+    <exclusions>
+      <exclusion>
+        <groupId>org.projectlombok</groupId>
+        <artifactId>lombok</artifactId>
+      </exclusion>
+    </exclusions>
 </dependency>
 <!-- Source: https://mvnrepository.com/artifact/io.cucumber/cucumber-java -->
 <dependency>
@@ -176,6 +181,9 @@
         <plugin>
           <artifactId>maven-surefire-plugin</artifactId>
           <version>3.3.0</version>
+          <configuration>
+            <reportsDirectory>${project.basedir}/test-artifacts/surefire</reportsDirectory>
+          </configuration>
         </plugin>
         <plugin>
           <artifactId>maven-jar-plugin</artifactId>
