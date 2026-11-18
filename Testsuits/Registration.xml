@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite"
+       parallel="tests"
+       thread-count="5">
+    <groups>
+        <run>
+            <include name="Registration">
+            </include>
+        </run>
+    </groups>
+
+    <listeners>
+        <listener class-name="TestAutomationFramework.TestComponents.Listeners">
+        </listener>
+    </listeners>
+
+    <test thread-count="5" name="Registration">
+        <classes>
+            <class name="TestAutomationFramework.SeleniumFramework.Testcases.RegistrationValidation"/>
+        </classes>
+
+    </test> <!-- Test -->
+</suite> <!-- Suite -->

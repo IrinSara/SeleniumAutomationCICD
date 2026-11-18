@@ -57,6 +57,7 @@ public class Registration extends CommonUtil {
 		firstName.sendKeys(firstNameValue);
 		lastName.sendKeys(lastNameValue);
 		userEmail.sendKeys(email);
+
 		userMobile.sendKeys(mobile);
 		new Select(occupation).selectByVisibleText(occupationValue);
 
@@ -72,6 +73,9 @@ public class Registration extends CommonUtil {
 		confirmPassword.sendKeys(confirmPasswordValue);
 		ageConfirmation.click();
 		registerButton.click();
+		if (getErrorMessage().equalsIgnoreCase("Please enter a valid email address.")) {
+			System.out.println("Registration not successful ");
+		}
 	}
 
 	public String getErrorMessage() {
@@ -80,7 +84,8 @@ public class Registration extends CommonUtil {
 	}
 
 	public boolean isEmailValid() {
-		return (Boolean) ((JavascriptExecutor) driver).executeScript(
+		Object result = ((JavascriptExecutor) driver).executeScript(
 				"return arguments[0].checkValidity();", userEmail);
+		return Boolean.TRUE.equals(result);
 	}
 }
